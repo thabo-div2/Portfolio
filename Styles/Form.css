@@ -1,0 +1,9 @@
+#formPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #a9a9a9;
+  width: 100vw;
+  height: 100vh;
+}

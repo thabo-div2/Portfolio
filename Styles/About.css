@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #a9a9a9;
   width: 100vw;
   height: 100vh;
 }
@@ -9,11 +10,40 @@
 .about-container {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
   margin: 20px;
+  width: 50%;
 }
 
 .about-img img {
   width: 400px;
   height: 400px;
   object-fit: cover;
+  border-radius: 20px;
+}
+
+.about-details1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-details2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-social {
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  margin-left: 10px;
+}
+
+.about-social i {
+  color: black;
+}
+
+.about-social span {
+  color: black;
 }

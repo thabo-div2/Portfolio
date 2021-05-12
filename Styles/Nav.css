@@ -13,6 +13,8 @@ body {
   top: 10px;
   right: 10px;
   position: fixed;
+  background-color: #222222;
+  color: white;
 }
 
 .navbar-links {
@@ -34,4 +36,9 @@ body {
 
 .navbar-link a {
   text-decoration: none;
+  color: white;
+}
+
+.navbar-button {
+  display: none;
 }

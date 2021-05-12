@@ -9,12 +9,29 @@
       src="https://kit.fontawesome.com/9bcb9c378d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <!--3rd Party CSS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+    />
     <!--My CSS-->
     <link rel="stylesheet" href="./Styles/Nav.css" />
     <link rel="stylesheet" href="./Styles/Home.css" />
     <link rel="stylesheet" href="./Styles/About.css" />
     <link rel="stylesheet" href="./Styles/Timeline.css" />
+    <link rel="stylesheet" href="./Styles/Skills.css" />
+    <link rel="stylesheet" href="./Styles/Testimonial.css">
+    <link rel="stylesheet" href="./Styles/Form.css">
   </head>
   <body>
     <!--Navigation-->
@@ -22,87 +39,481 @@
       <ul class="navbar-links">
         <li class="navbar-link"><a href="#landing">Home</a></li>
         <li class="navbar-link"><a href="#about-me">About</a></li>
-        <li class="navbar-link"><a href="#timeline-container">Education</a></li>
-        <li class="navbar-link"><a href="#">Skills</a></li>
-        <li class="navbar-link"><a href="#">Testimonals</a></li>
-        <li class="navbar-link"><a href="#">Contact</a></li>
+        <li class="navbar-link"><a href="#timelinePage">Education</a></li>
+        <li class="navbar-link"><a href="#skillPage">Skills</a></li>
+        <li class="navbar-link"><a href="#testimonialPage">Testimonals</a></li>
+        <li class="navbar-link"><a href="#formPage">Contact</a></li>
       </ul>
+      <button class="navbar-button"><i class="fas fa-bars"></i></button>
     </nav>
     <!--Landing Section-->
-    <div id="landing">
+    <section id="landing">
       <div class="homePage">
-        <h4 class="home-welcome">Welcome</h4>
+        <h2 class="home-welcome">Welcome</h2>
         <h1 class="home-heading">I am Thabo Setsubi</h1>
         <h3 class="home-title">Aspiring Software Developer</h3>
       </div>
       <button class="landing-button">
         <a href="#about-me"><i class="fas fa-chevron-down"></i></a>
       </button>
-    </div>
+    </section>
     <!--About Section-->
-    <div id="about-me">
+    <section id="about-me">
       <div class="about-img">
         <img src="./Images/C8 Apr21 Thabo Setsubi (1).JPG" alt="about-me" />
       </div>
       <div class="about-container">
         <h2>About</h2>
         <h5>I Am An Aspiring Software Developer</h5>
-        <p></p>
-        <div class="about-details">
+        <p>
+          My interest with the tech industry started with my brother and his
+          computer when I was a child. I always try to keep up-to-date with the
+          latest tech. I enrolled to do this course to learn coding and web
+          development.
+        </p>
+        <div class="about-details1">
           <div class="about-name">
             <h6>Name:</h6>
             <p>Thabo Setsubi</p>
           </div>
           <div class="about-birth">
             <h6>Date of Birth:</h6>
-            <p>15/03/1999</p>
+            <p>15 March 1999</p>
           </div>
+        </div>
+        <div class="about-details2">
           <div class="about-email">
             <h6>Email:</h6>
             <p>thabosetsubi3@gmail.com</p>
           </div>
           <div class="about-phone">
             <h6>Phone:</h6>
-            <p>(+27) 60 554 5859</p>
+            <p>060 554 5859</p>
           </div>
         </div>
-        <button><p>Download CV</p></button>
+        <div class="about-hobbies">
+          <h6>Hobbies:</h6>
+          <p>Drumming, PC Gamer, Jogging</p>
+        </div>
+        <div class="about-social">
+          <a href="https://github.com/thabo-div2"
+            ><i class="fab fa-github"></i></a
+          ><a href="https://app.netlify.com/teams/thabo-div2/overview"
+            ><i
+              class="iconify"
+              data-icon="simple-icons:netlify"
+              data-inline="false"
+            ></i></a
+          ><a href=""><i class="fab fa-linkedin-in"></i></a>
+        </div>
       </div>
-    </div>
+    </section>
     <!--Education Section-->
-    <div class="time-heading"><h2>Education & Work Experience</h2></div>
-    <div class="container-time">
-      <div id="timeline-container">
+    <section id="timelinePage">
+      <div class="timeline-container">
         <div class="timeline-line1"></div>
         <div class="timeline-line2"></div>
-        <div class="timeline-items item-1">
-          <h2>St Joseph's Marist College</h2>
-          <h3>2017</h3>
-          <p>Matriculated</p>
-        </div>
-        <div class="timeline-items item-2">
-          <h2>University of Western Cape</h2>
-          <h3>2019-2020</h3>
-          <p>Dropped Out</p>
-        </div>
-        <div class="timeline-items item-3">
-          <h2>Life Choices Academy</h2>
-          <h3>2021 - present</h3>
+        <div class="time-heading head-1"></div>
+        <div class="time-heading head-2"><h2>Education</h2></div>
+        <div class="time-heading head-3"><h2>Experience</h2></div>
+        <div class="timeline-items item-1" data-aos="fade-right">
+          <h2>St Jospeh's Marist College</h2>
+          <h4>2017</h4>
           <p></p>
         </div>
-        <div class="timeline-items item-4">
-          <h2>Life Choices Academy</h2>
-          <h3>2021 - present</h3>
+        <div class="timeline-items item-2" data-aos="fade-right">
+          <h2>University of the Western Cape</h2>
+          <h4>2019 - 2020</h4>
           <p></p>
+        </div>
+        <div class="timeline-items item-3" data-aos="fade-right">
+          <h2>Life Choices Academy</h2>
+          <h4>2021 - present</h4>
+          <p></p>
+        </div>
+        <div class="timeline-items item-4" data-aos="fade-right">
+          <h2>Self Learning</h2>
+          <h4>2021 - present</h4>
+          <p></p>
+        </div>
+        <div class="timeline-items item-5" data-aos="fade-right">
+          <h2>Life Choices Academy</h2>
+          <h4>2021 - present</h4>
+          <p></p>
+        </div>
+    </div>
+  </div>
+        
+    </section>
+    <!--Skills Section-->
+    <section id="skillPage">
+      <div class="skill-container">
+        <h1>Skills</h1>
+        <div class="skill-services">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+            <p>HTML</p>
+          </div>
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+            <p>CSS</p>
+          </div>
+          <div class="skill-icon">
+            <i class="fab fa-python"></i>
+            <p>Python</p>
+          </div>
         </div>
       </div>
-    </div>
-    <!--Skills Section-->
-    <!--Work Section-->
+      <div class="project-heading"><h2>My Projects</h2></div>
+      <div class="project-cards owl-carousel">
+        <div class="cards-container">
+          <a href="https://optimistic-bardeen-a13c08.netlify.app/"
+            ><img src="./Images/Screenshot_2021-04-30 Testimonials.png" alt=""
+          /></a>
+          <div>
+            <h3>Testimonals Exercise</h3>
+            <h4>HTML/CSS</h4>
+            <a href="https://optimistic-bardeen-a13c08.netlify.app/"
+              ><button>Link</button></a
+            >
+            <a href="https://github.com/thabo-div2/Testimonials_Sliders"
+              ><button>Live</button></a
+            >
+          </div>
+        </div>
+        <div class="cards-container">
+          <a href="https://confident-aryabhata-78e10b.netlify.app"
+            ><img src="./Images/Screenshot_2021-05-12 Project Cards.png" alt=""
+          /></a>
+          <div>
+            <h3>Project Cards Exercise</h3>
+            <h4>HTML/CSS</h4>
+            <a href="https://confident-aryabhata-78e10b.netlify.app"
+              ><button>Link</button></a
+            >
+            <a href="https://github.com/thabo-div2/Project_Cards"
+              ><button>Live</button></a
+            >
+          </div>
+        </div>
+        <div class="cards-container">
+          <a href="https://jolly-shaw-42b983.netlify.app/"
+            ><img
+              src="./Images/Screenshot_2021-04-30 Thabo's Contact Form.png"
+              alt=""
+          /></a>
+          <div>
+            <h3>Contact Form Exercise</h3>
+            <h4>HTML/CSS</h4>
+            <a href="https://jolly-shaw-42b983.netlify.app/"
+              ><button>Link</button></a
+            >
+            <a href="https://github.com/thabo-div2/Contact_Form"
+              ><button>Live</button></a
+            >
+          </div>
+        </div>
+        <div class="cards-container">
+          <a href="https://mystifying-hermann-44afd1.netlify.app/"
+            ><img src="./Images/Screenshot_2021-04-30 My Timeline.png" alt=""
+          /></a>
+          <div>
+            <h3>Timeline Exercise</h3>
+            <h4>HTML/CSS</h4>
+            <a href="https://mystifying-hermann-44afd1.netlify.app/"
+              ><button>Link</button></a
+            >
+            <a href="https://github.com/thabo-div2/My_Timeline"
+              ><button>Live</button></a
+            >
+          </div>
+        </div>
+        <div class="cards-container">
+          <a href="https://hungry-hodgkin-a8c68d.netlify.app"
+            ><img
+              src="./Images/Screenshot_2021-05-12 Sneaker Store(1).png"
+              alt=""
+          /></a>
+          <div>
+            <h3>Sneaker Website</h3>
+            <h4>HTML/CSS</h4>
+            <a href="https://hungry-hodgkin-a8c68d.netlify.app"
+              ><button>Link</button></a
+            >
+            <a href="https://github.com/thabo-div2/Project_Cards"
+              ><button>Live</button></a
+            >
+          </div>
+        </div>
+        <div class="cards-container">
+          <a href="https://replit.com/@ThaSet/pythontkinterexercise#main.py"
+            ><img
+              src="./Images/Screenshot_2021-05-12 python_tkinter_exercise.png"
+              alt=""
+          /></a>
+          <div>
+            <h3>Add Two Numbers</h3>
+            <h4>Python</h4>
+            <a
+              href="https://github.com/thabo-div2/python_tkinter_exercise/blob/main/Exercise.py"
+              ><button>Link</button></a
+            >
+            <a href="https://replit.com/@ThaSet/pythontkinterexercise#main.py"
+              ><button>Replit</button></a
+            >
+          </div>
+        </div>
+        <div class="cards-container">
+          <a href="https://replit.com/@ThaSet/BMIExercise-1#main.py"
+            ><img
+              src="./Images/Screenshot_2021-05-12 BMI_Exercise-1.png"
+              alt=""
+          /></a>
+          <div>
+            <h3>BMI Exercise</h3>
+            <h4>Python</h4>
+            <a
+              href="https://github.com/thabo-div2/BMI_Exercise/blob/main/BMI.py"
+              ><button>Link</button></a
+            >
+            <a href="https://replit.com/@ThaSet/BMIExercise-1#main.py"
+              ><button>Replit</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
     <!--Testimonial Section-->
+    <section id="testimonialPage">
+      <div class="testimonial-header"><h1>Testimonials</h1></div>
+      <div class="testimonial-container">
+        <div class="owl-carousel">
+          <div class="testimonials">
+            <div class="testimonial-card">
+              <img src="./Images/C8 Apr21 Thabo Setsubi (1).JPG" alt="">
+              <h3>Name 1</h3>
+              <h4>Title</h4>
+              <q
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti eligendi odio dolor excepturi illo ut repudiandae,
+                laborum pariatur quam corporis laudantium sit doloremque in
+                mollitia, quos accusantium totam voluptatum. Quos soluta magnam
+                similique velit. Laborum aliquam recusandae fuga, nostrum
+                laboriosam illo numquam quis blanditiis unde labore nemo
+                officiis, et quos!
+              </q>
+            </div>
+          </div>
+          <div class="testimonials">
+            <div class="testimonial-card">
+              <img src="./Images/C8 Apr21 Thabo Setsubi (1).JPG" alt="">
+              <h3>Name 2</h3>
+              <h4>Title</h4>
+              <q
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti eligendi odio dolor excepturi illo ut repudiandae,
+                laborum pariatur quam corporis laudantium sit doloremque in
+                mollitia, quos accusantium totam voluptatum. Quos soluta magnam
+                similique velit. Laborum aliquam recusandae fuga, nostrum
+                laboriosam illo numquam quis blanditiis unde labore nemo
+                officiis, et quos!</q
+              >
+            </div>
+          </div>
+          <div class="testimonials">
+            <div class="testimonial-card">
+              <img src="./Images/C8 Apr21 Thabo Setsubi (1).JPG" alt="">
+              <h3>Name 3</h3>
+              <h4>Title</h4>
+              <q
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti eligendi odio dolor excepturi illo ut repudiandae,
+                laborum pariatur quam corporis laudantium sit doloremque in
+                mollitia, quos accusantium totam voluptatum. Quos soluta magnam
+                similique velit. Laborum aliquam recusandae fuga, nostrum
+                laboriosam illo numquam quis blanditiis unde labore nemo
+                officiis, et quos!</q
+              >
+            </div>
+          </div>
+          <div class="testimonials">
+            <div class="testimonial-card">
+              <img src="./Images/C8 Apr21 Thabo Setsubi (1).JPG" alt="">
+              <h3>Name 4</h3>
+              <h4>Title</h4>
+              <q
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti eligendi odio dolor excepturi illo ut repudiandae,
+                laborum pariatur quam corporis laudantium sit doloremque in
+                mollitia, quos accusantium totam voluptatum. Quos soluta magnam
+                similique velit. Laborum aliquam recusandae fuga, nostrum
+                laboriosam illo numquam quis blanditiis unde labore nemo
+                officiis, et quos!</q
+              >
+            </div>
+          </div>
+          <div class="testimonials">
+            <div class="testimonial-card">
+              <img src="./Images/C8 Apr21 Thabo Setsubi (1).JPG" alt="">
+              <h3>Name 5</h3>
+              <h4>Title</h4>
+              <q
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti eligendi odio dolor excepturi illo ut repudiandae,
+                laborum pariatur quam corporis laudantium sit doloremque in
+                mollitia, quos accusantium totam voluptatum. Quos soluta magnam
+                similique velit. Laborum aliquam recusandae fuga, nostrum
+                laboriosam illo numquam quis blanditiis unde labore nemo
+                officiis, et quos!</q
+              >
+            </div>
+          </div>
+          <div class="testimonials">
+            <div class="testimonial-card">
+              <img src="./Images/C8 Apr21 Thabo Setsubi (1).JPG" alt="">
+              <h3>Name 6</h3>
+              <h4>Title</h4>
+              <q
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti eligendi odio dolor excepturi illo ut repudiandae,
+                laborum pariatur quam corporis laudantium sit doloremque in
+                mollitia, quos accusantium totam voluptatum. Quos soluta magnam
+                similique velit. Laborum aliquam recusandae fuga, nostrum
+                laboriosam illo numquam quis blanditiis unde labore nemo
+                officiis, et quos!</q
+              >
+            </div>
+          </div>
+          <div class="testimonials">
+            <div class="testimonial-card">
+              <img src="./Images/C8 Apr21 Thabo Setsubi (1).JPG" alt="">
+              <h3>Name 7</h3>
+              <h4>Title</h4>
+              <q
+                >Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Deleniti eligendi odio dolor excepturi illo ut repudiandae,
+                laborum pariatur quam corporis laudantium sit doloremque in
+                mollitia, quos accusantium totam voluptatum. Quos soluta magnam
+                similique velit. Laborum aliquam recusandae fuga, nostrum
+                laboriosam illo numquam quis blanditiis unde labore nemo
+                officiis, et quos!</q
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--Contact Section-->
+    <section id="formPage">
+      <div class="form-heading"><h1>Get in Touch.</h1></div>
+      <div class="form-container">
+        <div class="form-contact">
+          <div class="form-details">
+            <h4>Contact Info</h4>
+            <div class="form-social">
+              <div><i class="fas fa-mobile-alt"></i></div>
+              <div><i class="fas fa-map-marker-alt"></i></div>
+              <div><i class="far fa-envelope-open"></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-main">
+          <form action="https://formspree.io/f/mvodkolo" method="POST">
+            <!--Name-->
+            <div class="form-group">
+              <label class="label-input" for="name"
+                >Name:
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Full Name"
+                  required
+              /></label>
+            </div>
+            <!--Email-->
+            <div class="form-group">
+              <label class="label-input" for="email">
+                Email:
+                <input
+                  type="email"
+                  id="email"
+                  name="_replyto"
+                  placeholder="example@gmail.com"
+                  required
+                />
+              </label>
+            </div>
+            <!--Cell Number-->
+            <div class="form-group">
+              <label class="label-input" for="number"
+                >Cell number:
+                <input
+                  type="tel"
+                  id="number"
+                  name="number"
+                  placeholder="123 456 7890"
+                  required
+              /></label>
+            </div>
+            <!--Text Message-->
+            <div class="form-group">
+              <label class="label-input" for="message">
+                Message:
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Enter your message here"
+                  required
+                ></textarea>
+              </label>
+            </div>
+            <!--Button-->
+            <div class="form-group">
+              <button class="form-button" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
     <!--Footer Section-->
     <!--External Scripts-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          items: 1,
+          margin: 50,
+          loop: true,
+          stagePadding: 100,
+          dots: false,
+          responsive: {
+            0: {
+              items: 1,
+              stagePadding: 0,
+            },
+            500: {
+              items: 1,
+              margin: 50,
+              stagePadding: 100,
+            },
+          },
+        });
+      });
+    </script>
     <!--My Scripts-->
   </body>
 </html>

@@ -1,0 +1,43 @@
+#skillPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #a9a9a9;
+  width: 100vw;
+  height: 100vh;
+}
+
+.skill-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.skill-services {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.skill-icon {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  color: white;
+  border: 2px solid black;
+  background-color: #222222;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}

@@ -1,0 +1,27 @@
+#testimonialPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #36454f;
+  width: 100vw;
+  height: 100vh;
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.owl-carousel .owl-item .testimonial-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 54px;
+}
