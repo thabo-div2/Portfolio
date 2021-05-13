@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #a9a9a9;
+  background-color: white;
   width: 100vw;
   height: 100vh;
 }
@@ -11,9 +11,40 @@
   display: flex;
   flex-direction: column;
   background-color: white;
+  border: 5px solid #a9a9a9;
   border-radius: 20px;
+  padding: 20px;
   margin: 20px;
   width: 50%;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  border: 10px solid #a9a9a9;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.about-heading {
+  border-bottom: 1px solid #ed2d34;
+  width: 20%;
+}
+
+.about-heading span {
+  color: #ed2d34;
+}
+
+.about-container h2 {
+  font-size: 40px;
+}
+
+.about-container h5 {
+  font-size: 20px;
+}
+
+.about-subtitle span {
+  color: #ed2d34;
 }
 
 .about-img img {
@@ -28,22 +59,46 @@
   justify-content: space-between;
 }
 
+.about-name h6 {
+  font-size: 18px;
+  color: #ed2d34;
+}
+
+.about-birth h6 {
+  font-size: 18px;
+  color: #ed2d34;
+}
+
 .about-details2 {
   display: flex;
   justify-content: space-between;
 }
 
-.about-social {
-  display: flex;
-  justify-content: space-between;
-  color: black;
-  margin-left: 10px;
+.about-email h6 {
+  font-size: 18px;
+  color: #ed2d34;
 }
 
-.about-social i {
-  color: black;
+.about-phone h6 {
+  font-size: 18px;
+  color: #ed2d34;
 }
 
-.about-social span {
-  color: black;
+.about-hobbies h6 {
+  font-size: 18px;
+  color: #ed2d34;
+}
+
+.about-btn button {
+  border: 1px solid #ed2d34;
+  background-color: #ed2d34;
+  color: white;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.about-btn button:hover {
+  border: 1px solid #222222;
+  background-color: #222222;
+  color: white;
 }

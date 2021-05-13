@@ -5,7 +5,7 @@
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-color: #36454f;
+  background-color: #a9a9a9;
 }
 
 .homePage {
@@ -19,15 +19,51 @@
 
 .home-welcome {
   margin: 10px;
+  font-size: 20px;
 }
 
 .home-heading {
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 50px;
+}
+
+.home-heading span {
+  color: #ed2d34;
 }
 
 .home-title {
   margin: 50px;
+  font-size: 20px;
+}
+
+.home-title span {
+  color: #ed2d34;
+}
+
+.home-icons {
+  padding: 15px;
+}
+
+.home-icons i {
+  font-size: 28px;
+  color: black;
+  transition: 0.3s ease-in-out;
+  margin: 15px;
+}
+
+.home-icons i:hover {
+  color: #ed2d34;
+}
+
+.iconify {
+  font-size: 28px;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.iconify:hover {
+  color: #ed2d34;
 }
 
 .landing-button {
@@ -36,4 +72,11 @@
   background-color: white;
   padding: 10px;
   margin-top: 50px;
+  transition: 0.3s ease;
+}
+
+.landing-button:hover {
+  border: 1px solid #ed2d34;
+  background-color: #ed2d34;
+  color: white;
 }

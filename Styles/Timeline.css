@@ -2,7 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #36454f;
+  flex-direction: column;
+  background-color: #aaa;
   width: 100vw;
   height: 100vh;
 }
@@ -29,6 +30,17 @@
   background-color: black;
   width: 2px;
   height: 100%;
+}
+
+.timeline-items {
+  background: rgba(255, 255, 255, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  margin: 10px;
 }
 
 .head-2 {
@@ -64,4 +76,18 @@
 .item-5 {
   grid-column: 4;
   grid-row: 2;
+}
+
+.timeline-btn button {
+  border: 2px solid #ed2d34;
+  background-color: #ed2d34;
+  color: white;
+  margin: 10px;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.timeline-btn button:hover {
+  border: 2px solid #222222;
+  background-color: #222222;
 }

@@ -3,9 +3,19 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #a9a9a9;
+  background-color: white;
   width: 100vw;
   height: 100vh;
+}
+
+.skill-heading {
+  font-size: 30px;
+  border-bottom: #ed2d34;
+  margin: 10px;
+}
+
+.skill-heading h1 {
+  color: #ed2d34;
 }
 
 .skill-container {
@@ -29,6 +39,29 @@
   background-color: #222222;
 }
 
+.skill-icon i {
+  font-size: 100px;
+  transition: 0.5s ease;
+}
+
+.skill-icon i:hover {
+  color: #ed2d34;
+}
+
+.skill-para {
+  padding: 30px;
+}
+
+.project-heading {
+  font-size: 30px;
+  border-bottom: #ed2d34;
+  margin: 15px;
+}
+
+.project-heading span {
+  color: #ed2d34;
+}
+
 .project-cards {
   display: flex;
   flex-wrap: wrap;
@@ -36,8 +69,38 @@
   align-items: center;
 }
 
-.cards-container img {
-  width: 100px;
-  height: 100px;
+.cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+  width: 50%;
+  background: rgba(34, 34, 34, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.owl-carousel .owl-item .cards-container img {
+  width: 500px;
+  height: 300px;
   object-fit: cover;
+}
+
+.cards-items button {
+  background: rgba(169, 169, 169, 0.8);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.cards-items button:hover {
+  background: rgba(237, 45, 52, 0.8);
+  border-radius: 10px;
+  border: 1px solid rgba(237, 45, 52, 0.8);
+  color: white;
 }
