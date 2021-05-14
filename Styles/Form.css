@@ -5,7 +5,18 @@
   flex-direction: column;
   background-color: #ffffff;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 10px solid #a9a9a9;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 .form-heading {
@@ -15,6 +26,10 @@
 
 .form-heading span {
   color: #ed2d34;
+}
+
+.fix-form {
+  display: flex;
 }
 
 .form-container {
@@ -31,13 +46,33 @@
   width: 100%;
 }
 
-.form-details {
-  margin-left: 50px;
+.form-details h4 {
+  font-size: 30px;
+}
+
+.form-details span {
+  color: #ed2d34;
 }
 
 .form-social {
+  margin-top: 20px;
+}
+
+.form-social i {
+  font-size: 20px;
+}
+
+.icons {
   display: flex;
-  flex-direction: row;
+  padding: 10px;
+}
+
+.icons p {
+  margin: 10px;
+}
+
+.icons i {
+  margin: 10px;
 }
 
 .form-main {
@@ -46,4 +81,38 @@
   align-items: center;
   margin: 10px;
   padding: 15px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  border: 1px solid #a9a9a9;
+  background-color: #a9a9a9;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.label-input {
+  display: none;
+}
+
+.form-button {
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ed2d34;
+  border-radius: 10px;
+  background-color: #ed2d34;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.form-button:hover {
+  border: 1px solid #222222;
+  background-color: #222222;
 }

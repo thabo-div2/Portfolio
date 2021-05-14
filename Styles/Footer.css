@@ -1,0 +1,39 @@
+#footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  min-width: 100vw;
+  min-height: 10vh;
+  max-width: 100%;
+  align-items: center;
+}
+
+.footer-name span {
+  color: white;
+}
+
+.footer-btn button {
+  border: none;
+  background-color: #222222;
+  transition: 0.3s linear;
+}
+
+.footer-btn button:hover {
+  border: 1px solid #ed2d34;
+  background-color: #ed2d34;
+  border-radius: 10px;
+}
+
+.footer-btn i {
+  color: white;
+  padding: 5px;
+  transition: 0.3s linear;
+}
+
+.footer-btn i:hover {
+  color: white;
+}
+
+.foot-contact span {
+  color: white;
+}

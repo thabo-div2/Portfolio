@@ -4,7 +4,8 @@
   align-items: center;
   background-color: white;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 30px;
 }
 
 .about-container {
@@ -45,6 +46,11 @@
 
 .about-subtitle span {
   color: #ed2d34;
+}
+
+.about-img {
+  display: flex;
+  align-items: center;
 }
 
 .about-img img {

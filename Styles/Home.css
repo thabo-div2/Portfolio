@@ -4,8 +4,10 @@
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 30px;
   background-color: #a9a9a9;
+  background-image: url(../Images/pc-closeup.jpg);
 }
 
 .homePage {
@@ -20,12 +22,14 @@
 .home-welcome {
   margin: 10px;
   font-size: 20px;
+  color: white;
 }
 
 .home-heading {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 50px;
+  color: white;
 }
 
 .home-heading span {
@@ -35,10 +39,20 @@
 .home-title {
   margin: 50px;
   font-size: 20px;
+  color: white;
 }
 
 .home-title span {
   color: #ed2d34;
+}
+
+.typewriter h3 {
+  overflow: hidden;
+  border-right: 0.15em solid #ed2d34;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 .home-icons {
@@ -79,4 +93,31 @@
   border: 1px solid #ed2d34;
   background-color: #ed2d34;
   color: white;
+}
+
+.landing-button i {
+  transition: 0.3s ease-in-out;
+}
+
+.landing-button i:hover {
+  color: white;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ed2d34;
+  }
 }

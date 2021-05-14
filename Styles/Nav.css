@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .navbar {
@@ -47,4 +47,9 @@ body {
 
 .navbar-button {
   display: none;
+}
+
+.navbar-links.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
 }
