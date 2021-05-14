@@ -123,9 +123,19 @@
     font-size: 50px;
   }
 
+  .skill-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .owl-carousel .owl-item .cards-container img {
-    width: 250px;
-    height: 150px;
+    width: 112px;
+    height: 75px;
+  }
+
+  .cards-container {
+    width: 100%;
   }
 
   /*Testimonial*/
@@ -156,6 +166,11 @@
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
+  }
+
+  .fix-form {
+    display: flex;
+    flex-direction: column;
   }
   /*Footer*/
 }
