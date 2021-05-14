@@ -10,10 +10,18 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script>
+      $(function () {
+        $(document).scroll(function () {
+          var $nav = $(".navbar-links");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
     <!--3rd Party CSS-->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -37,6 +45,8 @@
     <link rel="stylesheet" href="./Styles/Skills.css" />
     <link rel="stylesheet" href="./Styles/Testimonial.css" />
     <link rel="stylesheet" href="./Styles/Form.css" />
+    <link rel="stylesheet" href="./Styles/Footer.css" />
+    <link rel="stylesheet" href="./Styles/Mobile.css" />
   </head>
   <body>
     <!--Navigation-->
@@ -46,17 +56,23 @@
         <li class="navbar-link"><a href="#about-me">About</a></li>
         <li class="navbar-link"><a href="#timelinePage">Education</a></li>
         <li class="navbar-link"><a href="#skillPage">Skills</a></li>
-        <li class="navbar-link"><a href="#testimonialPage">Testimonials</a></li>
+        <li class="navbar-link">
+          <a href="#testimonialPage">Testimonials</a>
+        </li>
         <li class="navbar-link"><a href="#formPage">Contact</a></li>
       </ul>
-      <button class="navbar-button"><i class="fas fa-bars"></i></button>
+      <button class="navbar-button" onclick="toggleNavbar()">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
     <!--Landing Section-->
     <section id="landing">
       <div class="homePage">
         <h2 class="home-welcome">Welcome</h2>
         <h1 class="home-heading">I am <span>Thabo Setsubi</span></h1>
-        <h3 class="home-title">Aspiring <span>Software Developer</span></h3>
+        <div class="typewriter">
+          <h3 class="home-title">Aspiring <span>Software Developer</span></h3>
+        </div>
         <div class="home-icons">
           <a href="https://github.com/thabo-div2"
             ><i class="fab fa-github"></i
@@ -134,9 +150,8 @@
       <div class="timeline-container">
         <div class="timeline-line1"></div>
         <div class="timeline-line2"></div>
-        <div class="time-heading head-1"></div>
-        <div class="time-heading head-2"><h2>Education</h2></div>
-        <div class="time-heading head-3"><h2>Experience</h2></div>
+        <div class="time-heading head-2"><h1>Education</h1></div>
+        <div class="time-heading head-3"><h1>Experience</h1></div>
         <div class="timeline-items item-1" data-aos="fade-right">
           <h2>St Jospeh's Marist College</h2>
           <h4>2017</h4>
@@ -145,17 +160,24 @@
         <div class="timeline-items item-2" data-aos="fade-right">
           <h2>University of the Western Cape</h2>
           <h4>2019 - 2020</h4>
-          <p></p>
+          <p>
+            Bcom General. Dropped out. Doing this course made me realize that
+            this was not my passion
+          </p>
         </div>
         <div class="timeline-items item-3" data-aos="fade-right">
           <h2>Life Choices Academy</h2>
           <h4>2021 - present</h4>
-          <p></p>
+          <p>
+            A Bootcamp, which taught me the fundamentals of web development, as
+            well as interpersonal skills where I learnt valuable leadership
+            skills.
+          </p>
         </div>
         <div class="timeline-items item-4" data-aos="fade-right">
           <h2>Self Learning</h2>
           <h4>2021 - present</h4>
-          <p></p>
+          <p>As the tech industry grows, I plan on growing</p>
         </div>
         <div class="timeline-items item-5" data-aos="fade-right">
           <h2>Life Choices Academy</h2>
@@ -164,7 +186,10 @@
         </div>
       </div>
       <div class="timeline-btn">
-        <a href=""><button>Download CV</button></a>
+        <a
+          href="https://docs.google.com/document/d/1a8EjUUcxmaglxqxM1BpEY9ywbYhaKVkKaRKgSEkZUlU/edit"
+          ><button>Download CV</button></a
+        >
       </div>
     </section>
     <!--Skills Section-->
@@ -339,18 +364,16 @@
             </div>
           </div>
           <div class="testimonials">
-            <img src="./Images/C8 Apr21 Uthmaan Breda (6).JPG" alt="Profile" />
+            <img src="./Images/C8 Apr21 Gary Africa (1).JPG" alt="Profile" />
             <div class="contents">
-              <h2>Uthmaan <span>Breda</span></h2>
+              <h2>Gary <span>Africa</span></h2>
               <h4>Peer</h4>
               <q
-                >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis odio error voluptatem tempora quidem modi in,
-                asperiores quisquam natus eius maiores! Adipisci corrupti
-                deleniti, optio dolor voluptatibus recusandae. Ducimus fugit ex
-                accusantium aliquid corporis, eius culpa repellendus optio
-                sequi. Porro reprehenderit illum blanditiis. Alias vitae cum
-                placeat iste culpa corrupti.</q
+                >Thabo, hard worker works well under pressure. He pays close
+                attention to dead lines and always try to do the best of his
+                ability to stand out. Hungry learner. When he decides to put his
+                mind to his work is quite . He's gifts always comes comes true
+                when you see he's work, that is where his secret hides.</q
               >
             </div>
           </div>
@@ -363,13 +386,10 @@
               <h2>Tashwill <span>Andries</span></h2>
               <h4>Peer</h4>
               <q
-                >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis odio error voluptatem tempora quidem modi in,
-                asperiores quisquam natus eius maiores! Adipisci corrupti
-                deleniti, optio dolor voluptatibus recusandae. Ducimus fugit ex
-                accusantium aliquid corporis, eius culpa repellendus optio
-                sequi. Porro reprehenderit illum blanditiis. Alias vitae cum
-                placeat iste culpa corrupti.</q
+                >Thabo is a well-mannered individual whose skills in web
+                development are undeniable. Any hurdle that is in his way, he
+                always manages to overcome. He will always go above and beyond
+                when helping his peers.</q
               >
             </div>
           </div>
@@ -389,18 +409,16 @@
             </div>
           </div>
           <div class="testimonials">
-            <img src="./Images/C8 Apr21 Thabo Setsubi (1).JPG" alt="Profile" />
+            <img
+              src="./Images/C8 Apr21Mikayla Beelders (1).JPG"
+              alt="Profile"
+            />
             <div class="contents">
-              <h2>Godwin</h2>
-              <h4>-Title-</h4>
+              <h2>Mikayla <span>Beelders</span></h2>
+              <h4>Peer</h4>
               <q
-                >Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Reiciendis odio error voluptatem tempora quidem modi in,
-                asperiores quisquam natus eius maiores! Adipisci corrupti
-                deleniti, optio dolor voluptatibus recusandae. Ducimus fugit ex
-                accusantium aliquid corporis, eius culpa repellendus optio
-                sequi. Porro reprehenderit illum blanditiis. Alias vitae cum
-                placeat iste culpa corrupti.</q
+                >Thabo is conserved , yet always ready to assist others. He puts
+                a tremendous amount of effort into the work he produces.</q
               >
             </div>
           </div>
@@ -409,91 +427,102 @@
     </section>
     <!--Contact Section-->
     <section id="formPage">
-      <div class="form-heading">
-        <h1>Get in <span>Touch.</span></h1>
-      </div>
-      <div class="form-container">
-        <div class="form-contact">
-          <div class="form-details">
-            <h4>Contact <span>Info</span></h4>
-            <div class="form-social">
-              <div>
-                <i class="fas fa-mobile-alt"></i>
-                <p>060 554 5859</p>
-              </div>
-              <div>
-                <i class="fas fa-map-marker-alt"></i>
-                <p>Cape Town</p>
-              </div>
-              <div>
-                <i class="far fa-envelope-open"></i>
-                <p>thabosetsubi3@gmail.com</p>
+      <div class="form-box">
+        <div class="form-heading">
+          <h1>Get in <span>Touch.</span></h1>
+        </div>
+        <div class="fix-form">
+          <div class="form-container">
+            <div class="form-contact">
+              <div class="form-details">
+                <h4>Contact <span>Info</span></h4>
+                <div class="form-social">
+                  <div class="icons">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>060 554 5859</p>
+                  </div>
+                  <div class="icons">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Cape Town</p>
+                  </div>
+                  <div class="icons">
+                    <i class="far fa-envelope-open"></i>
+                    <p>thabosetsubi3@gmail.com</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="form-main">
-          <form action="https://formspree.io/f/mvodkolo" method="POST">
-            <!--Name-->
-            <div class="form-group">
-              <label class="label-input" for="name"
-                >Name:
+          <div class="form-main">
+            <form action="https://formspree.io/f/mvodkolo" method="POST">
+              <!--Name-->
+              <div class="form-group">
+                <label class="label-input" for="name">Name:</label>
                 <input
+                  class="form-input"
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="Full Name"
+                  placeholder="Name"
                   required
-              /></label>
-            </div>
-            <!--Email-->
-            <div class="form-group">
-              <label class="label-input" for="email">
-                Email:
+                />
+              </div>
+              <!--Email-->
+              <div class="form-group">
+                <label class="label-input" for="email"> Email:</label>
                 <input
+                  class="form-input"
                   type="email"
                   id="email"
                   name="_replyto"
-                  placeholder="example@gmail.com"
+                  placeholder="Email"
                   required
                 />
-              </label>
-            </div>
-            <!--Cell Number-->
-            <div class="form-group">
-              <label class="label-input" for="number"
-                >Cell number:
+              </div>
+              <!--Cell Number-->
+              <div class="form-group">
+                <label class="label-input" for="number">Cell number:</label>
                 <input
+                  class="form-input"
                   type="tel"
                   id="number"
                   name="number"
-                  placeholder="123 456 7890"
+                  placeholder="Phone Number"
                   required
-              /></label>
-            </div>
-            <!--Text Message-->
-            <div class="form-group">
-              <label class="label-input" for="message">
-                Message:
+                />
+              </div>
+              <!--Text Message-->
+              <div class="form-group">
+                <label class="label-input" for="message"> Message:</label>
                 <textarea
+                  class="form-input"
                   id="message"
                   name="message"
-                  placeholder="Enter your message here"
+                  placeholder="Message"
                   required
                 ></textarea>
-              </label>
-            </div>
-            <!--Button-->
-            <div class="form-group">
-              <button class="form-button" type="submit">
-                Submit Information
-              </button>
-            </div>
-          </form>
+              </div>
+              <!--Button-->
+              <div class="form-group">
+                <button class="form-button" type="submit">
+                  Submit Information
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
     <!--Footer Section-->
+    <div id="footer">
+      <div class="footer-name"><span>©Thabo Setsubi</span></div>
+      <div class="footer-btn">
+        <a href="#landing"
+          ><button><i class="fas fa-chevron-up"></i></button
+        ></a>
+      </div>
+      <div class="foot-contact"><span>060 554 5859</span></div>
+    </div>
     <!--External Scripts-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -532,5 +561,6 @@
       });
     </script>
     <!--My Scripts-->
+    <script src="./Scripts/Nav.js"></script>
   </body>
 </html>
