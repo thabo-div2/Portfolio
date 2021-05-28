@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.footer-name {
+  margin-left: 10px;
+}
+
 .footer-name span {
   color: white;
 }
@@ -32,6 +36,10 @@
 
 .footer-btn i:hover {
   color: white;
+}
+
+.foot-contact {
+  margin-right: 20px;
 }
 
 .foot-contact span {

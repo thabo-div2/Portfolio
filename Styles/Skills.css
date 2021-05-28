@@ -10,6 +10,9 @@
 }
 
 .skill-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
   border-bottom: #ed2d34;
   margin: 10px;
@@ -33,6 +36,8 @@
 .skill-icon {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 20px;
   padding: 20px;
   color: white;

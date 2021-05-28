@@ -7,7 +7,11 @@
   min-height: 100vh;
   padding: 30px;
   background-color: #a9a9a9;
-  background-image: url(../Images/pc-closeup.jpg);
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(../Images/pc-closeup.jpg);
 }
 
 .homePage {
@@ -22,14 +26,14 @@
 .home-welcome {
   margin: 10px;
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 .home-heading {
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 50px;
-  color: white;
+  color: black;
 }
 
 .home-heading span {
@@ -39,7 +43,7 @@
 .home-title {
   margin: 50px;
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 .home-title span {
