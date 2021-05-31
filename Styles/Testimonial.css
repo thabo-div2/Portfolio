@@ -25,7 +25,23 @@
   color: white;
 }
 
+#testimonial-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.owl-carousel #testimonial-slider {
+  display: grid;
+  place-items: center;
+}
+
 .testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
   background: rgba(250, 242, 242, 0.9);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);
@@ -37,9 +53,12 @@
 }
 
 .owl-carousel .owl-item .testimonials img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
   object-fit: cover;
 }
 
