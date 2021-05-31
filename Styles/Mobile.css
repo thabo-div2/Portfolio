@@ -5,13 +5,43 @@
 }
 @media screen and (max-width: 800px) {
   /*Nav*/
+  .navbar-links {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    background: #464646;
+    position: fixed;
+    top: -100%;
+    /*   left: -100%; */
+    width: 50vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    gap: 20px;
+    transition: all 0.3s linear;
+  }
   .navbar-button {
     position: fixed;
+    display: flex;
     top: 0;
-    right: 0;
+    right: 25px;
     z-index: 100;
     font-size: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 20px;
   }
+
+  .navbar-button i {
+    color: #ed2d34;
+  }
+  .navbar-links.active {
+    top: -30px;
+    right: 0;
+  }
+
   /*Home*/
   #landing {
     display: flex;

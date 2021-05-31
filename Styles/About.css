@@ -44,16 +44,16 @@
   font-size: 20px;
 }
 
-.about-container p {
-  padding: 10px;
-}
-
 .about-subtitle {
   padding: 10px;
 }
 
 .about-subtitle span {
   color: #ed2d34;
+}
+
+.about-para {
+  padding: 10px;
 }
 
 .about-img {
@@ -108,6 +108,10 @@
 .about-hobbies h6 {
   font-size: 18px;
   color: #ed2d34;
+}
+
+.about-btn {
+  padding-top: 20px;
 }
 
 .about-btn button {
