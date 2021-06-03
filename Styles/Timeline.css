@@ -6,7 +6,8 @@
   background-color: #aaa;
   width: 100vw;
   min-height: 100vh;
-  padding: 30px;
+  padding-left: 300px;
+  padding-right: 300px;
 }
 
 .timeline-container {
