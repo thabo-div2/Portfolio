@@ -25,37 +25,50 @@
   color: white;
 }
 
-#testimonial-slider {
-  display: flex;
+/* #testimonial-slider { */
+/* display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  margin: 0 auto;
+  align-items: center; */
+/* } */
+
+/* .test-1 {
+  grid-column: 1;
+  grid-row: 1;
 }
 
-.owl-carousel #testimonial-slider {
-  display: grid;
-  place-items: center;
-  margin: 0 auto;
+.test-2 {
+  grid-column: 1;
+  grid-row: 2;
 }
 
-.testimonials {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 50%;
-  padding: 15px;
-  margin: 0 auto;
+.test-3 {
+  grid-column: 1;
+  grid-row: 3;
 }
 
-.owl-carousel .owl-item .testimonials img {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  width: 50px;
-  height: 50px;
-  border-radius: 20px;
+.test-4 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.test-5 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.test-6 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.test-7 {
+  grid-column: 3;
+  grid-row: 2;
+} */
+
+.testimonial-img img {
+  width: 100px;
+  height: 100px;
   object-fit: cover;
 }
 
@@ -64,9 +77,39 @@
 }
 
 .contents {
+  /* display: flex; */
+  /* flex-direction: row; */
   color: white;
 }
 
 .contents h4 {
   color: #ed2d34;
+}
+
+.vertical-menu {
+  width: 50%; /* Set a width if you like */
+  height: 90vh;
+  overflow-y: auto;
+}
+
+.vertical-menu div {
+  background-color: #a9a9a9; /* Grey background color */
+  color: black; /* Black text color */
+  /* display: block; Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu div:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu div.active {
+  background-color: #a9a9a9; /* Add a green color to the "active/current" link */
+  color: white;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
 }

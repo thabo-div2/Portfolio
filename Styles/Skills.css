@@ -73,18 +73,21 @@
   color: #ed2d34;
 }
 
-.slidercontainer {
-  height: 600px;
-  width: 90vw;
-  display: grid;
-  place-items: center;
+.mySlides {
+  display: none;
 }
 
-.owl-carousel.owl-loaded .project-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.project-cards {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 .cards-container {
@@ -97,15 +100,53 @@
   margin: 0 auto;
 }
 
-.owl-carousel .owl-item .cards-container img {
-  width: 500px;
+.slide1 {
+  background: url(../Images/Screenshot_2021-04-30\ Testimonials.png);
+  background-size: cover;
+  width: 300px;
   height: 300px;
-  object-fit: cover;
 }
 
-.cards-items {
-  display: flex;
-  flex-direction: column;
+.slide2 {
+  background: url(../Images/Screenshot_2021-05-12\ Project\ Cards.png);
+  background-size: 300px 300px cover;
+  width: 300px;
+  height: 300px;
+}
+
+.slide3 {
+  background: url(../Images/Screenshot_2021-05-12\ Project\ Cards.png);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.slide4 {
+  background: url(../Images/Screenshot_2021-04-30\ My\ Timeline.png);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.slide5 {
+  background: url(../Images/Screenshot_2021-05-12\ Project\ Cards.png);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.slide6 {
+  background: url(../Images/Screenshot_2021-05-12\ python_tkinter_exercise.png);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.slide7 {
+  background: url(../Images/Screenshot_2021-05-12\ BMI_Exercise-1.png);
+  background-size: cover;
+  width: 300px;
+  height: 300px;
 }
 
 .cards-items button {
@@ -121,4 +162,22 @@
   border-radius: 10px;
   border: 1px solid rgba(237, 45, 52, 0.8);
   color: white;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
