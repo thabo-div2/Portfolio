@@ -31,6 +31,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: 89px;
 }
 
 .skill-icon {
@@ -80,7 +81,7 @@
 .project-cards {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin-right: 200px;
 }
 
 .fade {
@@ -100,14 +101,42 @@
   margin: 0 auto;
 }
 
-.slide1 {
-  background: url(../Images/Screenshot_2021-04-30\ Testimonials.png);
-  background-size: cover;
-  width: 300px;
-  height: 300px;
+.cards-items {
+  position: relative;
+  width: 50%;
 }
 
-.slide2 {
+.project-img {
+  opacity: 1;
+  display: block;
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 500px;
+  opacity: 0;
+  transition: 0.5s ease;
+  object-fit: cover;
+  background-color: rgba(250, 244, 244, 0.8);
+  display: grid;
+  place-items: center;
+}
+
+.cards-items:hover .project-overlay {
+  opacity: 1;
+}
+
+/* .slide2 {
   background: url(../Images/Screenshot_2021-05-12\ Project\ Cards.png);
   background-size: 300px 300px cover;
   width: 300px;
@@ -147,6 +176,32 @@
   background-size: cover;
   width: 300px;
   height: 300px;
+}
+
+.slide7:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5));
+} */
+
+.project-btn {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-left: 260px;
+}
+
+.project-btn button {
+  background: rgba(169, 169, 169, 0.8);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.project-btn button:hover {
+  background: rgba(237, 45, 52, 0.8);
+  border-radius: 10px;
+  border: 1px solid rgba(237, 45, 52, 0.8);
+  color: white;
 }
 
 .cards-items button {

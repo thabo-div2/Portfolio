@@ -102,6 +102,11 @@
   justify-content: space-between;
 }
 
+.about-details3 {
+  display: flex;
+  justify-content: space-between;
+}
+
 .about-email h6 {
   font-size: 18px;
   color: #ed2d34;
@@ -113,6 +118,26 @@
 }
 
 .about-hobbies h6 {
+  font-size: 18px;
+  color: #ed2d34;
+}
+
+.about-license h6 {
+  font-size: 18px;
+  color: #ed2d34;
+}
+
+.about-record h6 {
+  font-size: 18px;
+  color: #ed2d34;
+}
+
+.about-location h6 {
+  font-size: 18px;
+  color: #ed2d34;
+}
+
+.about-lang h6 {
   font-size: 18px;
   color: #ed2d34;
 }
