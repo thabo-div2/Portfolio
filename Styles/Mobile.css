@@ -1,212 +1,207 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 @media screen and (max-width: 800px) {
-  body {
-    overflow-x: hidden;
-  }
-  /*Nav*/
-  .navbar-links {
-    display: flex;
-    list-style-type: none;
-    flex-direction: column;
-    background: #464646;
-    position: fixed;
-    top: -100%;
-    /*   left: -100%; */
-    width: 100vw;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    gap: 20px;
-    transition: all 0.3s linear;
-  }
-  .navbar-button {
-    position: fixed;
-    display: flex;
-    top: 0;
-    right: 25px;
-    z-index: 100;
-    font-size: 30px;
-    background: transparent;
-    border: none;
-    outline: none;
-    padding: 20px;
-  }
+	body {
+		overflow-x: hidden;
+	}
+	/*Nav*/
+	.navbar-links {
+		display: flex;
+		list-style-type: none;
+		flex-direction: column;
+		background: #464646;
+		position: fixed;
+		top: -100%;
+		/*   left: -100%; */
+		width: 100vw;
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+		text-transform: uppercase;
+		gap: 20px;
+		transition: all 0.3s linear;
+	}
+	.navbar-button {
+		position: fixed;
+		display: flex;
+		top: 0;
+		right: 25px;
+		z-index: 100;
+		font-size: 30px;
+		background: transparent;
+		border: none;
+		outline: none;
+		padding: 20px;
+	}
 
-  .navbar-button i {
-    color: #ed2d34;
-  }
-  .navbar-links.active {
-    top: -30px;
-    right: 0;
-  }
+	.navbar-button i {
+		color: #ed2d34;
+	}
+	.navbar-links.active {
+		top: -30px;
+		right: 0;
+	}
 
-  /*Home*/
-  #landing {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 5%;
-  }
-  .homePage {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
-  .home-icons {
-    padding-right: 30px;
-  }
-  /*About*/
-  #about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    background-color: white;
-  }
+	/*Home*/
+	#landing {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-direction: column;
+		padding: 5%;
+	}
+	.homePage {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.home-icons {
+		padding-right: 30px;
+	}
+	/*About*/
+	#about-me {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5%;
+		background-color: white;
+	}
 
-  .about-container {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    min-height: 50%;
-    min-width: 100%;
-  }
+	.about-container {
+		display: flex;
+		flex-direction: column;
+		margin: 10px;
+		min-height: 50%;
+		min-width: 100%;
+	}
 
-  .about {
-    display: flex;
-    flex-direction: column;
-  }
+	.about {
+		display: flex;
+		flex-direction: column;
+	}
 
-  .about-img {
-    padding-right: 86px;
-    display: flex;
-    justify-content: flex-start;
-  }
+	.about-img {
+		padding-right: 86px;
+		display: flex;
+		justify-content: flex-start;
+	}
 
-  .about-img img {
-    width: 200px;
-    height: 200px;
-  }
-  /*Timeline Section*/
-  #timelinePage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5%;
-    flex-direction: column;
-    background-color: #aaa;
-  }
-  .timeline-container {
-    grid-template-columns: 10% 1fr;
-    grid-template-rows: repeat(12, 1fr);
-  }
+	.about-img img {
+		width: 200px;
+		height: 200px;
+	}
+	/*Timeline Section*/
+	#timelinePage {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5%;
+		flex-direction: column;
+		background-color: #aaa;
+	}
+	.timeline-container {
+		grid-template-columns: 10% 1fr;
+		grid-template-rows: repeat(12, 1fr);
+	}
 
-  .timeline-line1 {
-    grid-column: 1;
-    grid-row-start: 2;
-    grid-row-end: 6;
-  }
+	.timeline-line1 {
+		grid-column: 1;
+		grid-row-start: 2;
+		grid-row-end: 6;
+	}
 
-  .timeline-line2 {
-    grid-column: 1;
-    grid-row-start: 8;
-    grid-row-end: 11;
-    height: 35vh;
-  }
+	.timeline-line2 {
+		grid-column: 1;
+		grid-row-start: 8;
+		grid-row-end: 11;
+		height: 35vh;
+	}
 
-  .head-2 {
-    grid-column: 1;
-    grid-row: 1;
-  }
+	.head-2 {
+		grid-column: 1;
+		grid-row: 1;
+	}
 
-  .head-3 {
-    grid-column: 1;
-    grid-row: 7;
-  }
+	.head-3 {
+		grid-column: 1;
+		grid-row: 7;
+	}
 
-  .item-1 {
-    grid-column: 2;
-    grid-row: 2;
-  }
+	.item-1 {
+		grid-column: 2;
+		grid-row: 2;
+	}
 
-  .item-2 {
-    grid-column: 2;
-    grid-row: 3;
-  }
+	.item-2 {
+		grid-column: 2;
+		grid-row: 3;
+	}
 
-  .item-3 {
-    grid-column: 2;
-    grid-row: 4;
-  }
+	.item-3 {
+		grid-column: 2;
+		grid-row: 4;
+	}
 
-  .item-4 {
-    grid-column: 2;
-    grid-row: 5;
-  }
+	.item-4 {
+		grid-column: 2;
+		grid-row: 5;
+	}
 
-  .item-5 {
-    grid-column: 2;
-    grid-row: 8;
-  }
-  /*Skills*/
-  #skillPage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-  }
+	.item-5 {
+		grid-column: 2;
+		grid-row: 8;
+	}
+	/*Skills*/
+	#skillPage {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 10px;
+	}
 
-  .skill-icon i {
-    font-size: 50px;
-  }
+	.skill-icon i {
+		font-size: 50px;
+	}
 
-  .skill-services {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+	.skill-services {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 
-  .project-cards {
-    display: flex;
-    flex-direction: column;
-  }
+	.project-cards {
+		display: flex;
+		flex-direction: column;
+	}
 
-  .owl-carousel .owl-item .cards-container img {
-    width: 112px;
-    height: 75px;
-  }
+	.cards-container {
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
 
-  .cards-container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
+	/*Testimonial*/
+	.testimonials {
+		display: flex;
+		flex-direction: column;
+	}
 
-  /*Testimonial*/
-  .testimonials {
-    display: flex;
-    flex-direction: column;
-  }
+	/*Form*/
+	#formPage {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background-color: #ffffff;
+	}
 
-  /*Form*/
-  #formPage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #ffffff;
-  }
-
-  .fix-form {
-    display: flex;
-    flex-direction: column;
-  }
-  /*Footer*/
+	.fix-form {
+		display: flex;
+		flex-direction: column;
+	}
+	/*Footer*/
 }
