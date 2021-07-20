@@ -95,6 +95,15 @@ let projects = [
 		githubURL: "https://github.com/thabo-div2/BMI_Exercise/blob/main/BMI.py",
 		liveProjectURL: "https://replit.com/@ThaSet/BMIExercise-1#main.py",
 	},
+	{
+		imgURL: "./Images/Weather_APp.png",
+		imgALT: "Weather",
+		title: "Weather App",
+		techStack: "Python",
+		description: "A app that shows the current weather",
+		githubURL: "https://github.com/thabo-div2/Weather_App",
+		liveProjectURL: "https://replit.com/@ThaSet/WeatherApp",
+	},
 ];
 
 function createCard(card) {
@@ -130,3 +139,25 @@ function renderCards() {
 }
 
 renderCards();
+
+function filterCards(category) {
+	let cards = document.getElementsByClassName("cards-container");
+
+	if (category === "All") {
+		for (card of cards) {
+			card.style.display = "block";
+		}
+		return;
+	}
+
+	for (card of cards) {
+		console.log(card);
+		card.style.display = "none";
+	}
+
+	let selectedCards = document.querySelectorAll(`[techStack = '${category}']`);
+
+	for (card of selectedCards) {
+		card.style.display = "block";
+	}
+}

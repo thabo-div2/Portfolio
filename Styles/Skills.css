@@ -31,7 +31,6 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	margin-left: 89px;
 }
 
 .skill-icon {
@@ -79,9 +78,6 @@
 }
 
 .project-cards {
-	max-width: 1000px;
-	position: relative;
-	margin-right: 200px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 }
@@ -99,13 +95,12 @@
 	align-items: flex-start;
 	flex-direction: column;
 	padding: 15px;
-	width: 50%;
 	margin: 0 auto;
 }
 
 .cards-items {
 	position: relative;
-	width: 50%;
+	/* width: 50%; */
 }
 
 .project-img {
