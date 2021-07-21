@@ -14,7 +14,7 @@
 		flex-direction: column;
 		background: #464646;
 		position: fixed;
-		top: -100%;
+		top: -200%;
 		/*   left: -100%; */
 		width: 100vw;
 		height: 100vh;
@@ -42,7 +42,7 @@
 	}
 	.navbar-links.active {
 		top: -30px;
-		right: 0;
+		right: -30px;
 	}
 
 	/*Home*/
@@ -60,6 +60,11 @@
 	}
 	.home-icons {
 		padding-right: 30px;
+	}
+
+	.landing-button {
+		justify-self: center;
+		align-self: center;
 	}
 	/*About*/
 	#about-me {
@@ -93,6 +98,11 @@
 		width: 200px;
 		height: 200px;
 	}
+
+	.about-details1 {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
 	/*Timeline Section*/
 	#timelinePage {
 		display: flex;
@@ -104,7 +114,7 @@
 	}
 	.timeline-container {
 		grid-template-columns: 10% 1fr;
-		grid-template-rows: repeat(12, 1fr);
+		grid-template-rows: repeat(5, 1fr);
 	}
 
 	.timeline-line1 {
@@ -113,22 +123,23 @@
 		grid-row-end: 6;
 	}
 
-	.timeline-line2 {
+	/* .timeline-line2 {
 		grid-column: 1;
 		grid-row-start: 8;
 		grid-row-end: 11;
 		height: 35vh;
-	}
+	} */
 
 	.head-2 {
-		grid-column: 1;
+		grid-column: 2;
 		grid-row: 1;
+		place-items: center;
 	}
 
-	.head-3 {
+	/* .head-3 {
 		grid-column: 1;
 		grid-row: 7;
-	}
+	} */
 
 	.item-1 {
 		grid-column: 2;
@@ -182,6 +193,14 @@
 		display: flex;
 		flex-direction: column;
 		margin: 0 auto;
+	}
+
+	.project-img {
+		width: 300px;
+	}
+
+	.project-overlay {
+		width: 300px;
 	}
 
 	/*Testimonial*/
