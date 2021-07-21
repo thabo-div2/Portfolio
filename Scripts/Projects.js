@@ -89,7 +89,7 @@ let projects = [
 	{
 		imgURL: "./Images/Screenshot_2021-05-12 BMI_Exercise-1.png",
 		imgALT: "BMI",
-		title: "Contact Form Exercise",
+		title: "BMI Calculator",
 		techStack: "Python",
 		description: "A tkinter exercise that calculates a persons BMI",
 		githubURL: "https://github.com/thabo-div2/BMI_Exercise/blob/main/BMI.py",
@@ -103,6 +103,24 @@ let projects = [
 		description: "A app that shows the current weather",
 		githubURL: "https://github.com/thabo-div2/Weather_App",
 		liveProjectURL: "https://replit.com/@ThaSet/WeatherApp",
+	},
+	{
+		imgURL: "./Images/JSCALC.png",
+		imgALT: "Js Calculator",
+		title: "JS Calculator",
+		techStack: "JavaScript",
+		description: "A app that uses javascript to calculate",
+		githubURL: "https://github.com/thabo-div2/JS_Calculator",
+		liveProjectURL: "https://objective-blackwell-b84d26.netlify.app",
+	},
+	{
+		imgURL: "./Images/Poke.png",
+		imgALT: "Poke",
+		title: "PokeAPI JS",
+		techStack: "JavaScript",
+		description: "Fetch API exercise",
+		githubURL: "https://github.com/thabo-div2/PokeApi",
+		liveProjectURL: "https://pokeapi-thabo.netlify.app/",
 	},
 ];
 

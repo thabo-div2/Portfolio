@@ -201,6 +201,21 @@
 	color: white;
 }
 
+.project-btn-cont button {
+	background: rgba(169, 169, 169, 0.8);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	padding: 10px;
+	transition: 0.3s ease-in-out;
+}
+
+.project-btn-cont button:hover {
+	background: rgba(237, 45, 52, 0.8);
+	border-radius: 10px;
+	border: 1px solid rgba(237, 45, 52, 0.8);
+	color: white;
+}
+
 .cards-items button {
 	background: rgba(169, 169, 169, 0.8);
 	border-radius: 10px;
