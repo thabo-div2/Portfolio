@@ -134,10 +134,10 @@ function createCard(card) {
         <h4>${card.techStack}</h4>
         <p>${card.description}</p>
         <div>
-          <a href="${card.githubURL}">
+          <a href="${card.githubURL}" target="blank">
             <button>Github</button>
           </a>
-          <a href="${card.liveProjectURL}">
+          <a href="${card.liveProjectURL}" target="blank">
             <button>Live Link</button>
           </a>
         </div>
