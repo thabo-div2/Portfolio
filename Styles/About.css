@@ -149,3 +149,23 @@
 	background-color: #222222;
 	color: white;
 }
+
+.about-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 500px;
+	opacity: 0;
+	transition: 0.5s ease;
+	object-fit: cover;
+	background-color: rgba(250, 244, 244, 0.8);
+	display: grid;
+	place-items: center;
+}
+
+.about-img:hover .about-overlay {
+	opacity: 1;
+}

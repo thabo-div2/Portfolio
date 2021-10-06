@@ -122,6 +122,24 @@ let projects = [
 		githubURL: "https://github.com/thabo-div2/PokeApi",
 		liveProjectURL: "https://pokeapi-thabo.netlify.app/",
 	},
+	{
+		imgURL: "./Images/Screenshot 2021-10-06 140613.png",
+		imgALT: "Calendar",
+		title: "Calendar JS",
+		techStack: "JavaScript",
+		description: "A Basic JS Calendar",
+		githubURL: "https://github.com/thabo-div2/Calendar_JS",
+		liveProjectURL: "https://setsubi-calenedar.netlify.app/",
+	},
+	{
+		imgURL: "./Images/Screenshot 2021-10-06 140651.png",
+		imgALT: "Dentist",
+		title: "Dentist Registry",
+		techStack: "JavaScript",
+		description: "Final End of Module Project with both my own API and design",
+		githubURL: "https://github.com/thabo-div2/final_project_frontend",
+		liveProjectURL: "https://setsubi-dentist-registry-11101.netlify.app/",
+	},
 ];
 
 function createCard(card) {
