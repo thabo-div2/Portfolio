@@ -1,57 +1,65 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* border: 1px solid black; */
-  scroll-behavior: smooth;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* border: 1px solid black; */
+	scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
-  overflow-x: hidden;
+	font-family: "Ubuntu", sans-serif;
+	overflow-x: hidden;
 }
 
 .navbar {
-  position: fixed;
-  background-color: #222;
-  z-index: 100;
+	position: fixed;
+	background-color: #222;
+	z-index: 100;
 }
 
 .navbar-links {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-direction: row;
-  list-style: none;
-  position: fixed;
-  margin-right: 30px;
-  margin-top: 30px;
-  top: 10px;
-  right: 10px;
-  background-color: #222;
-  z-index: 100;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: row;
+	list-style: none;
+	position: fixed;
+	margin-right: 30px;
+	margin-top: 30px;
+	top: 10px;
+	right: 10px;
+	background-color: #222;
+	z-index: 100;
 }
 
 .navbar-link {
-  margin: 10px;
-  text-decoration: none;
+	margin: 10px;
+	text-decoration: none;
 }
 
 .navbar-link a {
-  text-decoration: none;
-  color: white;
-  transition: 0.3s ease-in-out;
+	font-weight: 100;
+	text-decoration: none;
+	color: white;
+	transition: 0.3s ease-in-out;
 }
 
 .navbar-link a:hover {
-  color: #ed2d34;
+	color: #ed2d34;
 }
 
 .navbar-button {
-  display: none;
+	display: none;
 }
 
 .navbar-links.scrolled {
-  background-color: #fff !important;
-  transition: background-color 200ms linear;
+	background-color: #fff !important;
+	transition: background-color 200ms linear;
+}
+
+a.active {
+	color: #ed2d34;
+	font-weight: 800;
+	border-bottom: 1px solid #ed2d34;
+	border-top: 1px solid #ed2d34;
 }

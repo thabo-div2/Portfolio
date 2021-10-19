@@ -66,6 +66,7 @@
 .about-img {
 	padding-top: 10px;
 	padding-left: 20px;
+	backface-visibility: hidden;
 }
 
 .about-img img {
@@ -73,6 +74,7 @@
 	height: 420px;
 	object-fit: cover;
 	border-radius: 20px;
+	backface-visibility: hidden;
 }
 
 .details-about {
@@ -166,6 +168,6 @@
 	place-items: center;
 }
 
-.about-img:hover .about-overlay {
+.about:hover .about-overlay {
 	opacity: 1;
 }

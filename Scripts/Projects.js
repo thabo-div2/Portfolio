@@ -105,6 +105,15 @@ let projects = [
 		liveProjectURL: "https://replit.com/@ThaSet/WeatherApp",
 	},
 	{
+		imgURL: "./Images/Lotto_screen.png",
+		imgALT: "Lotto",
+		title: "Lotto App",
+		techStack: "Python",
+		description: "Python End of Module Project: Lotto",
+		githubURL: "https://github.com/thabo-div2/python_EOMP",
+		liveProjectURL: "https://replit.com/@ThaSet/pythonEOMP#main.py",
+	},
+	{
 		imgURL: "./Images/JSCALC.png",
 		imgALT: "Js Calculator",
 		title: "JS Calculator",
