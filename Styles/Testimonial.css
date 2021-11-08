@@ -1,28 +1,28 @@
 #testimonialPage {
-  display: grid;
-  place-items: center;
-  background-color: #a9a9a9;
-  width: 100vw;
-  min-height: 100vh;
-  padding: 30px;
+	display: grid;
+	place-items: center;
+	background-color: #a9a9a9;
+	width: 100vw;
+	min-height: 100vh;
+	padding: 30px;
 }
 
 .testimonial-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	max-width: 100vw;
 }
 
 .testimonial-header {
-  border-bottom: 1px solid #ed2d34;
-  margin: 20px;
+	border-bottom: 1px solid #ed2d34;
+	margin: 20px;
 }
 
 .testimonial-header h1 {
-  font-size: 50px;
-  color: white;
+	font-size: 50px;
+	color: white;
 }
 
 /* #testimonial-slider { */
@@ -67,49 +67,53 @@
 } */
 
 .testimonial-img img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
 }
 
 .contents span {
-  color: #ed2d34;
+	color: #ed2d34;
 }
 
 .contents {
-  /* display: flex; */
-  /* flex-direction: row; */
-  color: white;
+	/* display: flex; */
+	/* flex-direction: row; */
+	color: white;
 }
 
 .contents h4 {
-  color: #ed2d34;
+	color: #ed2d34;
 }
 
 .vertical-menu {
-  width: 50%; /* Set a width if you like */
-  height: 70vh;
-  overflow-y: auto;
+	width: 50%; /* Set a width if you like */
+	height: 70vh;
+	overflow-y: auto;
 }
 
 .vertical-menu div {
-  background-color: #a9a9a9; /* Grey background color */
-  color: black; /* Black text color */
-  /* display: block; Make the links appear below each other */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove underline from links */
+	background-color: #a9a9a9; /* Grey background color */
+	color: black; /* Black text color */
+	/* display: block; Make the links appear below each other */
+	padding: 12px; /* Add some padding */
+	text-decoration: none; /* Remove underline from links */
 }
 
 .vertical-menu div:hover {
-  background-color: #ccc; /* Dark grey background on mouse-over */
+	background-color: #ccc; /* Dark grey background on mouse-over */
 }
 
-.vertical-menu div.active {
-  background-color: #a9a9a9; /* Add a green color to the "active/current" link */
-  color: white;
+/* .vertical-menu div.active {
+	background-color: #a9a9a9; 
+	color: white;
+} */
+
+.vertical-menu::-webkit-scrollbar {
+	display: none;
 }
 
 .testimonials {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
