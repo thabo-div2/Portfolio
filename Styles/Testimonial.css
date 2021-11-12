@@ -25,95 +25,43 @@
 	color: white;
 }
 
-/* #testimonial-slider { */
-/* display: flex;
-  justify-content: center;
-  align-items: center; */
-/* } */
-
-/* .test-1 {
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.test-2 {
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.test-3 {
-  grid-column: 1;
-  grid-row: 3;
-}
-
-.test-4 {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.test-5 {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.test-6 {
-  grid-column: 2;
-  grid-row: 3;
-}
-
-.test-7 {
-  grid-column: 3;
-  grid-row: 2;
-} */
-
-.testimonial-img img {
-	width: 100px;
-	height: 100px;
-	object-fit: cover;
-}
-
-.contents span {
-	color: #ed2d34;
-}
-
-.contents {
-	/* display: flex; */
-	/* flex-direction: row; */
-	color: white;
-}
-
-.contents h4 {
-	color: #ed2d34;
-}
-
-.vertical-menu {
-	width: 50%; /* Set a width if you like */
-	height: 70vh;
-	overflow-y: auto;
-}
-
-.vertical-menu div {
-	background-color: #a9a9a9; /* Grey background color */
-	color: black; /* Black text color */
-	/* display: block; Make the links appear below each other */
-	padding: 12px; /* Add some padding */
-	text-decoration: none; /* Remove underline from links */
-}
-
-.vertical-menu div:hover {
-	background-color: #ccc; /* Dark grey background on mouse-over */
-}
-
-/* .vertical-menu div.active {
-	background-color: #a9a9a9; 
-	color: white;
-} */
-
-.vertical-menu::-webkit-scrollbar {
-	display: none;
-}
-
-.testimonials {
+.testimonials-container {
 	display: flex;
-	flex-direction: row;
+	width: 90vw;
+}
+
+.testimonial {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 80vh;
+	border-radius: 30px;
+	color: #fff;
+	cursor: pointer;
+	flex: 0.5;
+	margin: 10px;
+	position: relative;
+	transition: flex 0.7s ease-in;
+}
+
+.content {
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	margin: 0;
+	opacity: 0;
+	transition: opacity 0.3s ease-in 0.4s;
+}
+
+.testimonial.active {
+	flex: 5;
+}
+
+.testimonial.active .content {
+	opacity: 1;
+}
+
+.testimonial.active p,
+.testimonial.active q {
+	opacity: 1;
 }

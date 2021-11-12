@@ -2,6 +2,7 @@ function toggleNavbar() {
 	document.getElementsByClassName("navbar-links")[0].classList.toggle("active");
 }
 
+// Nav Highlighter
 const sections = document.querySelectorAll("section[id]");
 
 const highLighter = () => {
@@ -11,7 +12,6 @@ const highLighter = () => {
 		const sectionHeight = current.offsetHeight;
 		const sectionTop = current.offsetTop - 50;
 		const sectionId = current.getAttribute("id");
-		console.log(sectionId);
 
 		if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
 			document
