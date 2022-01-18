@@ -117,6 +117,24 @@ let projects = [
 		githubURL: "https://github.com/thabo-div2/final_project_frontend",
 		liveProjectURL: "https://setsubi-dentist-registry-11101.netlify.app/",
 	},
+	{
+		imgURL: "./Images/rotation_nav.png",
+		imgALT: "Rotation",
+		title: "Rotation Navigation",
+		techStack: "JavaScript",
+		description: "A navbar that rotates",
+		githubURL: "https://github.com/thabo-div2/Rotation_Nav",
+		liveProjectURL: "https://determined-hoover-5297d0.netlify.app/",
+	},
+	{
+		imgURL: "./Images/Reaction_timer.png",
+		imgALT: "reaction_timer",
+		title: "Reaction Timer",
+		techStack: "VueJS",
+		description: "Test your reaction speed",
+		githubURL: "https://github.com/thabo-div2/vue_reaction_timer",
+		liveProjectURL: "https://hopeful-ptolemy-2a96f6.netlify.app/",
+	},
 ];
 
 function createCard(card) {
