@@ -27,41 +27,44 @@
 
 .testimonials-container {
 	display: flex;
-	width: 90vw;
+	/* width: 90vw; */
 }
 
-.testimonial {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 80vh;
-	border-radius: 30px;
-	color: #fff;
-	cursor: pointer;
-	flex: 0.5;
-	margin: 10px;
-	position: relative;
-	transition: flex 0.7s ease-in;
+/* .testimonial-slider {
+	max-width: 200px;
+	height: 150px;
+	overflow-y: auto;
+} */
+
+.testimonial-img img {
+	width: 450px;
+	height: 300px;
+	object-fit: cover;
 }
 
-.content {
-	position: absolute;
-	bottom: 20px;
-	left: 20px;
-	margin: 0;
-	opacity: 0;
-	transition: opacity 0.3s ease-in 0.4s;
+.vertical-menu {
+	width: 500px;
+	height: 400px;
+	overflow-y: auto;
 }
 
-.testimonial.active {
-	flex: 5;
+.vertical-menu::-webkit-scrollbar {
+	display: none;
 }
 
-.testimonial.active .content {
-	opacity: 1;
+.vertical-menu .testimonials {
+	background-color: #a9a9a9; /* Grey background color */
+	color: black; /* Black text color */
+	display: block; /* Make the links appear below each other */
+	padding: 12px; /* Add some padding */
+	text-decoration: none; /* Remove underline from links */
 }
 
-.testimonial.active p,
-.testimonial.active q {
-	opacity: 1;
+.vertical-menu .testimonials:hover {
+	background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu .testimonials.active {
+	background-color: #04aa6d; /* Add a green color to the "active/current" link */
+	color: white;
 }
